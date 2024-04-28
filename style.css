@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cbcbcb;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.hero_main {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    width: 1100px;
+    margin: 10px auto 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+.hero {
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 1px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+footer {
+    max-width: 1100px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.button {
+    position: relative;
+    margin: 0 15px;
+}
+
+.button img {
+    background-color: #cbcbcb;
+    width: 80%;
+    height: auto;
+    transition: ease-in 0.1s;
+}
+
+.button:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+.button-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+}
+
+.button-center .button-caption
+{
+    bottom: 0;
+}
+
+.button-center {
+    margin-top: -40px;
+    width: 70%;
+    height: auto;
+    align-items: center;
+}
+
+.button:hover .button-caption {
+    opacity: 0;
+}
+
+.img3
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: ease-in-out 0.3s;
+    filter: blur(1rem);
+}
+
+.img3:hover
+{
+    filter: blur(0rem);
+}
