@@ -1,4 +1,4 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,11 +17,39 @@ body {
 }
 
 .hero_main {
-    max-width: 1100px;
-    margin: auto;
-    margin-top: 10px;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 4px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero_wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.hero_left {
+    width: 80%;
+    max-width: 800px; 
+    margin-top: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero_right {
+    width: 30%;
+    height: auto;
+    max-width: 295px;
+    margin-top: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0px;   
+    align-self: flex-start; 
 }
 
 header {
@@ -31,7 +59,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -70,17 +98,15 @@ header h1 {
 }
 
 footer {
-    max-width: 1100px;
+    width: 1100px;
+    margin: 10px auto 0;
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 4px;
 }
 
 .buttons {
@@ -123,8 +149,6 @@ footer {
 }
 
 .button-center {
-    margin-top: -40px;
-    width: 70%;
     height: auto;
     align-items: center;
 }
@@ -135,6 +159,8 @@ footer {
 
 .img3
 {
+    width: 95%;
+    height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     transition: ease-in-out 0.3s;
     filter: blur(1rem);
@@ -143,4 +169,25 @@ footer {
 .img3:hover
 {
     filter: blur(0rem);
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: oblique;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: white;
+    background-color: #555;
+}
+
+.sidebar p {
+    color: #333;
+    font-size: 20px;
+    background-color: #333;
 }
